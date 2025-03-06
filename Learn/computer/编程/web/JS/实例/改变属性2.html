@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js改变属性</title>
+	</head>
+	<body>
+		<script>
+			function _change(){
+				var i = document.getElementById("txt");
+				var l = document.getElementById("txt2");
+				i.value=l.value;
+			}
+		</script>
+		起始值：<input id="txt" type="text" value="hahahhaha"><br>
+		改变值：<input id="txt2" type="text" placeholder="请输入你要的值">
+		<input type="button" value="改变值" onclick="_change()">
+	</body>
+</html>

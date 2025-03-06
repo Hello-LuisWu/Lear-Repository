@@ -1,0 +1,160 @@
+@charset "UTF-8";
+:root{
+    font-size: 62.5%;
+    /* 
+        Hex: 颜色16进制代码
+        rgb: 十进制代码代码
+        cmyk: 印刷颜色代码
+    */
+    --red: #FF0000;
+    --garnet-red: #830E0D;
+    --ruby-red: #9b111e;
+    --burgundy: #800020;
+    --orangered: #FF4500;
+    --cardinal-red: #C41E3A;
+    --carmine: #FF00FF;
+
+    --orange: #FFA500;
+    --coral: #FF7F50;
+    --metallic-gold: #D4AF37;
+
+    --yellow: #ffff00;
+    --citrine-yellow: #E4D00A;
+    --gold: #FFD700;
+    --ivory: #FFFFF0;
+    --ganlan: #808000;
+
+
+    --green: #00ff00;
+    --green2: #008000;
+    --emerald-green: #009473;
+    --forest-green: #014421;
+
+    --burlywood: #DEB887;
+
+    --cyan: #00FFFF;
+    --teal: #008080;
+    --turquoise: #00836E;
+
+    --pink2: #FFC0CB;
+
+    --blue: #0000ff;
+    --sapphire-blue: #0f52ba;
+    --azure: #F0FFFF;
+    --aliceblue: #F0F8FF;
+    --snow-white: #F3F6FB;
+    --dark-midnight-blue: #003366;
+    --light-ice-blue: #B4DDF9;
+
+
+    --purple: #800080;
+    --amethyst-purple: #9966CC;
+    --darkorchid: #9932CC;
+
+    --lightsalmon: #FFA07A;
+    /* Grayscale */
+    --silver: #C0C0C0;
+    --light-silver: #D8D8D8;
+    --gs00: #ffffff;
+    --gs10: #eeeeee;
+    --gs15: #e5e5e5;
+    --gs20: #dcdcdc;
+    --gs25: #d2d2d2;
+    --gs30: #c9c9c9;
+    --gs35: #bfbfbf;
+    --gs40: #b5b5b5;
+    --gs45: #aaaaaa;
+    --gs50: #a0a0a0;
+    --gs55: #959595;
+    --gs60: #898989;
+    --gs65: #7d7d7d;
+    --gs70: #707070;
+    --gs75: #626262;
+    --gs80: #535353;
+    --gs85: #434343;
+    --gs87: #333333;
+    --gs90: #313131;
+    --gs95: #1b1b1b;
+    --gs100: #000000;
+    /* black transparent */ 
+    --bt10: rgba(0,0,0,0.1);
+    --bt15: rgba(0,0,0,0.15);
+    --bt20: rgba(0,0,0,0.2);
+    --bt25: rgba(0,0,0,0.25);
+    --bt30: rgba(0,0,0,0.3);
+    --bt35: rgba(0,0,0,0.35);
+    --bt40: rgba(0,0,0,0.4);
+    --bt45: rgba(0,0,0,0.45);
+    --bt50: rgba(0,0,0,0.5);
+    --bt55: rgba(0,0,0,0.55);
+    --bt60: rgba(0,0,0,0.6);
+    --bt65: rgba(0,0,0,0.65);
+    --bt70: rgba(0,0,0,0.7);
+    --bt75: rgba(0,0,0,0.75);
+    --bt80: rgba(0,0,0,0.8);
+    --bt85: rgba(0,0,0,0.85);
+    --bt90: rgba(0,0,0,0.9);
+    --bt95: rgba(0,0,0,0.95);
+    /* white transparent */
+    --wt10: rgba(255,255,255,0.1);
+    --wt15: rgba(255,255,255,0.15);
+    --wt20: rgba(255,255,255,0.2);
+    --wt25: rgba(255,255,255,0.25);
+    --wt30: rgba(255,255,255,0.3);
+    --wt35: rgba(255,255,255,0.35);
+    --wt40: rgba(255,255,255,0.4);
+    --wt45: rgba(255,255,255,0.45);
+    --wt50: rgba(255,255,255,0.5);
+    --wt55: rgba(255,255,255,0.55);
+    --wt60: rgba(255,255,255,0.6);
+    --wt65: rgba(255,255,255,0.65);
+    --wt70: rgba(255,255,255,0.7);
+    --wt75: rgba(255,255,255,0.75);
+    --wt80: rgba(255,255,255,0.8);
+    --wt85: rgba(255,255,255,0.85);
+    --wt90: rgba(255,255,255,0.9);
+    --wt95: rgba(255,255,255,0.95);
+    /* This User Interface colors from apple website */
+    --bg-color: #f0f0f7;
+    --text-color: #1d1d1f;
+    --link-color: #0066cc;
+    --link-hover-color: #cd0200;
+    --nav-color: rgba(0,0,0,0.8);
+    --button-color: #0071e3;
+    --button-hover-color: #0069d1;
+    --code-bg-color: #f2f1f1;
+
+}
+body{
+    background-color: var(--bg-color);
+}
+.text{
+    padding: 1rem;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,textarea,select{margin:0;padding:0} 
+a{color: var(--link-color);text-decoration:none} 
+a:hover{color:var(--link-hover-color);text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word} 
+form{font-size: 0;}
+input{
+    font-size: 1.4rem;
+    border: 0;
+    padding: .2rem .6rem;
+    box-sizing: border-box;
+}
+code{
+    padding: .2em .4em;
+    background:  var(--bt80);
+    color: var(--wt80);
+    border-radius: 3px;
+    cursor: text;
+    font-weight: normal;
+}
+code:hover{
+    background: rgba(0,0,0,0.9);
+}
+

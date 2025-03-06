@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+      :root{
+          font-size: 10px;
+          --size1200px: 1200px;
+          --size1000px: 1000px;
+          margin: 0;
+          padding: 0;
+          /* 定义变量 */
+          --size200px: 20rem;
+          --size5px: 0.5rem;
+          --color-green: #00ff00;
+          --color-blue: blue;
+
+      }
+      body{
+          margin: 0;
+          padding: 0;
+      }
+      article{
+          font-size: 1rem;
+          /* 引用变量 */
+          border-radius: var(--size5px);
+          background-color: var(--color-green);
+          width: var(--size1200px);
+          height: var(--size1000px);
+      }
+      header{
+        /* 变量计算 */
+        width: calc(var(--size200px) * 2);
+        height: calc(var(--size200px) / 2);
+        border-radius: var(--size5px);
+        background-color: var(--color-blue);      
+        box-shadow: var(--size5px) var(--size5px) var(--size5px) var(--size5px) var(--color-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <article>xbmm
+      <header>
+        <nav>
+        </nav>
+        <main>
+        </main>
+        <footer>
+        </footer>
+      </header>
+    </article>
+  </body>
+</html>
+

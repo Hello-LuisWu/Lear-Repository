@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #9d9d9d;
+            padding: 0;
+        }
+        div{
+            width: 25%;
+            height: 40px;
+            float: left;
+            margin-top: 21px;
+            box-sizing: border-box;
+            background-color: #555;
+            position:relative;
+            border-radius: 10px 10px 0 0;
+        }
+        section{
+            height: 60px;
+            border: 1px solid #555;
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #555;
+        }
+        article{
+            background-color: #555;
+        }
+        section::after{
+            content: "";
+            height: 0;
+            display: block;
+            clear: both;
+            visibility: hidden;
+        }
+        .tab::after,
+        .tab::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: blueviolet;
+            bottom: 0;
+        }
+
+        .tab::after{
+            right: -10px;
+            background: radial-gradient(circle at 10px 0, transparent 10px, #9d9d9d 10px);
+        
+        }
+        .tab::before{
+            left: -10px;
+            background: radial-gradient(circle at 0 0, transparent 10px, #9d9d9d 10px);
+        }
+        .tab{
+            background-color: #9d9d9d;
+            z-index: 2;
+        }
+        .tab-border{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 40px;
+
+        }
+        .tab-border::after{
+            content: '';
+            position: absolute;
+            height: 25px;
+            left: -2px;
+            margin-top: 12px;
+            width: 2px;
+            background-color: #414141;
+        }
+        div:last-child .tab-border::before{
+            content: '';
+            position: absolute;
+            height: 25px;
+            margin-top: 12px;
+            right: -2px;
+            width: 2px;
+            background-color: #414141;
+        }
+        span{
+            font-size: 20px;
+            font-weight: 700;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+<article>
+    <section>
+        <div class="">
+            <nav class="tab-border">
+                <span>kjkgrfn</span>
+            </nav>
+        </div>
+        <div class="tab">
+            <nav class="tab-border">
+                <span>kjkgrfn</span>
+
+            </nav>
+        </div>
+        <div class="">
+            <nav class="tab-border">
+                <span>kjkgrfn</span>
+
+            </nav>
+    
+        </div>
+        <div class="">
+            <nav class="tab-border">
+                <span>kjkgrfn</span>
+
+            </nav>
+    
+        </div>
+       </section>
+</article>
+</body>
+</html>

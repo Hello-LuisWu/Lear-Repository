@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inmput 的属性</title>
+</head>
+<body>
+<form action="">
+
+<pre style="font-size: 18px;line-height: 30px;">
+	autofocus 加载页面自动获取焦点（不适用于 type="hidden"）
+	placeholder 提示文字（占位符）
+	maxlength 规定最多可以输入多少字符
+	accesskey 指定快捷键 如：accesskey="g"。即，alt+g
+	disabled 禁用
+	required  必须要填写的值
+	readonly 只读
+	accept 要选择文件的类型，accept 属性只能与 &#60;input type="file"&#62; 配合使用
+	selected  下拉列表默认的选中项
+	multiple 多选文件（选项）（只适用于file类型的input和select）
+	checked 默认选中（只适用于checkbox、select和radio类型的input）。
+	name input元素名称
+	formenctype 覆盖 form 元素的 enctype 属性，该属性与 type="submit" 和 type="image" 配合使用。
+	formmethod 覆盖 form 元素的 method 属性。该属性与 type="submit" 以及 type="image" 配合使用。
+	formnovalidate 覆盖 form 元素的 novalidate 属性。如果使用该属性，则提交表单时按钮不会执行验证过程。该属性适用于 &#60;form&#62; 以及以下类型的 &#60;input&#62;：text, search, url, telephone, email, password, date pickers, range 以及 color。
+	formtarget 覆盖 form 元素的 target 属性。该属性与 type="submit" 以及 type="image" 配合使用。
+	formaction 覆盖 form 元素的 action 属性。该属性适用于 type="submit" 以及 type="image"。
+	height 定义 input 字段的高度。（适用于 type="image"）
+	width 定义 input 字段的宽度。（适用于 type="image"）
+	list 引用包含输入字段的预定义选项的 datalist 。
+	max 规定输入字段的最大值。与min配合使用。
+	min 规定输入字段的最小值。与max配合使用。
+	step：步长（点击上下箭头会按照步长增长）
+	type input类型
+	value input的值
+	src 图像按钮的图像url路径
+	size 定义输入字段的宽度。
+	autocomplete 是否开启浏览器记忆功能。属性值：off 关闭记忆功能，on（默认值）开启记忆功能。
+	tabindex 按tab键的时候，指定光标移动的顺序
+	novalidata  禁用表单验证（form属性）
+	pattern 规定输入字段的值的模式或格式
+	</pre>
+	<input type="text" pattern="[A-z]{3}" title="输入三个字母" readonly accesskey="f" maxlength="11" autofocus placeholder="请输入用户名"/>
+	<br/>
+	<input type="password"/>
+	<br/>
+	<input autocomplete="off"  type="email"/>
+	<br/>
+	<input type="tel"/>
+	<br/>
+	<input type="file" required accept="image/grf,jpg,png" multiple/>
+	<br/>
+	<input type="checkbox" checked="checked"/>
+	<br/>
+	<input type="submit"/>
+
+</form>
+<form action="">
+	<input type="text" required="required" pattern="[A-z][0-9]" title="请输入数字和字符" maxlength="16"/>
+	<input type="submit" value="提交"/>
+</form>
+</body>
+</html>

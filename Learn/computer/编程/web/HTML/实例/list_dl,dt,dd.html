@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        dl *{
+            transition: all .4s;
+        }
+        dt{
+            font-size: 18px;
+            margin: .3em 0 0 0;
+            font-weight: bold;
+        }
+        dt:hover{
+            color: #1E90FF;
+        }
+        dd{
+            margin: 0 0 0 0;
+            opacity: 0;
+            font-size: 12px;
+            color: #1E90FF;
+            background-color: rgb(255, 228, 228);
+            display: inline;
+            padding: 4px;
+        }
+        dt:hover + dd{
+            opacity: 1;
+        }
+        dt span{
+            color: black;
+            font-size: 18px;
+            margin: 0 0.5em 0 0;
+        }
+        dt:hover span{
+            display: inline-block;
+            transform: rotate(90deg);
+            color: #1E90FF;
+        }
+    </style>
+</head>
+<body>
+<h3>学习任务</h3>
+<h1>学习html5+css3的使用</h1>
+<p>本章主要介绍的是dl标签的时间用</p>
+<h2>名词解释</h2>
+<!--dl默认有16px的上下外边距-->
+<!--dd默认有40px的左外边距-->
+<dl>
+    <dt><span>▷</span> html5 </dt>
+        <dd><span>新一代的超文本标记语言</span></dd>
+    <dt><span>▷</span> css3：</dt>
+        <dd><span>新一代的层<br>叠样式表</span></dd>
+    <dt><span>▷</span> dl：</dt>
+        <dd><span>dl的作用就是用 <br> 来解释名词用的</span></dd>
+</dl>
+</body>
+</html>

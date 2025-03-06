@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="cmn-hans-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爱你，用我自己的方式</title>
+    <style type="text/css">
+        *{
+            font-size: 10px;
+            padding: 0;
+            margin: 0;
+        }
+        section{
+            width: 90%;
+            height: 96%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            border-radius: 5px;
+            background-image: url("img/mylove.jpg");
+            background-size: auto 100% ;
+            background-repeat: no-repeat;
+            background-position: center ;
+            box-shadow: 1px 1px 14px rgba(0,0,0,0.8);
+        }
+        audio{
+            margin: auto;
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+        }
+        .icon{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            background-image: url("img/aini.jpg");
+            border: 6px solid white;
+            border-radius: 80px;
+            -moz-animation-name: kk;
+            -webkit-animation-name: kk;
+            -ms-animation-name: kk;
+            animation-name: kk;
+            -o-animation-name: kk;
+            animation-duration:20s;
+            -webkit-animation-duration:20s;
+            -moz-animation-duration:20s;
+            -ms-animation-duration:20s;
+            -o-animation-duration:20s;
+            animation-timing-function:linear;
+            -webkit-animation-timing-function:linear;
+            -moz-animation-timing-function:linear;
+            -ms-animation-timing-function:linear;
+            -o-animation-timing-function:linear;
+            animation-iteration-count:infinite;
+            -webkit-animation-iteration-count:infinite;
+            -moz-animation-iteration-count:infinite;
+            -ms-animation-iteration-count:infinite;
+            -o-animation-iteration-count:infinite;
+        }
+        @keyframes kk{
+                from{transform: rotate(0deg)}
+                to{transform: rotate(360deg)}
+                }
+        @-webkit-keyframes kk{
+                from{transform: rotate(0deg)}
+                to{transform: rotate(360deg)}
+                }
+        @-moz-keyframes kk{
+                from{transform: rotate(0deg)}
+                to{transform: rotate(360deg)}
+                }
+        @-o-keyframes kk{
+               from{transform: rotate(0deg)}
+               to{transform: rotate(360deg)}
+           }
+        @-ms-keyframes kk{
+               from{transform: rotate(0deg)}
+               to{transform: rotate(360deg)}
+           }
+        .top{
+            height: 75%;
+            position: relative;
+        }
+        .bottom{
+            height: 25%;
+            background-color: #d9bc9a;
+            overflow: hidden;
+            position: relative;
+        }
+        .t{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            width: 100%;
+            height:80%;
+        }
+        .t1{
+            transition: all .6s;
+            width: 90%;
+            height: 98%;
+        }
+        .txt-k{
+            width: 90%;
+            height: 30px;
+            overflow: hidden;
+            border-radius: 5px;
+            margin: 20px auto;
+            text-indent: 10px;
+        }
+        #txt{
+            width: 70%;
+            height: 30px;
+            border: none;
+            float: left;
+            outline: none;
+            box-sizing: border-box;
+            padding-left: 3px;
+            margin: 0;
+        }
+        #btn{
+            width: 30%;
+            border: none;
+            background-color: #94ffe8;
+            float: left;
+            outline: none;
+            height: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        #hidden_love{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 55;
+            background-color: #4bf7ff;
+            bottom: -100%;
+
+
+        }
+        #video_window{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.6s;
+            opacity: 0;
+            bottom: -100%;
+            transform: scale(0.1);
+        }
+        #video_window_CloseButton{
+            position: absolute;
+            right: 0px;
+            background-color: rgba(0,0,0,0.1);
+            border: 0px;
+            top: 0px;
+        }
+        #video_window_CloseButton:hover{
+            background-color: rgba(0,0,0,0.2);
+        }
+        #video_body{
+            width: 100%;
+            height: 100%;
+        }
+        #tishi{
+            position: fixed;
+            height: 80px;
+            width: 90%;
+
+
+
+        }
+        #AUdio{
+            outline: none;
+        }
+    </style>
+    <script>
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                alert("小小峰的提示：你正在是用电脑浏览此网页，为了有更好的用户体验，请改用手机端浏览")
+            }
+        }
+        browserRedirect();
+
+        var _uat = navigator.userAgent;
+        //判断正在使用的IE版本
+        if (_uat.indexOf("MSIE 5.0")>0||_uat.indexOf("MSIE 6.0")>0||_uat.indexOf("MSIE 7.0")>0||_uat.indexOf("MSIE 8.0")>0||_uat.indexOf("MSIE 9.0")>0) {
+            window.location.href='test.html';  //如果ie版本是6、7、8、和9，就自动跳转到这个链接
+        }
+        else if(_uat.indexOf("MSIE 10.0")>0||_uat.indexOf("MSIE 11.0")>0){
+            alert("建议不要用IE浏览器进行浏览")
+        }
+    </script>
+
+
+</head>
+<body style="margin: 0; background: #82907f">
+<div id="tishi">
+
+</div>
+<section>
+<div class="top">
+    <div style="height: 100px;overflow: hidden">
+        <div class="txt-k">
+            <input type="text" id="txt" placeholder=" 输入“520”"/><input value="搜索" id="btn" type="submit"/>
+        </div>
+    </div>
+    <div class="icon">
+    </div>
+<marquee style="width: 150px;height: 30px;line-height:30px;color:white;font-size:14px;display: block;margin: 20px auto">蓝又时 - 孤单心事（爱你，用我自己的方式）</marquee>
+<audio src="audio
+/lys_gdxs.mp3" id="AUdio" controls="controls" autoplay="autoplay" loop="loop"></audio>
+</div>
+<div class="bottom">
+<div class="t">
+    <table class="t1" cellspacing="0" cellpadding="0" border="0" style="height: 100%;width: 100%">
+        <tr>
+            <td align="center" valign="middle">
+				<marquee  scrollamount="1" onMouseOver="this.stop()" onMouseOut="this.start()" style="width: 80%;line-height:200%;height: 50%; text-align: center" direction="up">
+                    做我女朋友
+                    <br/>
+                    好不好
+                    <br/>
+                    不行的话
+                    <br/>
+                    我再想想办法
+				</marquee>
+                 <!--   n 55!w !<br/>n paau ! <br/>n a^o7 ! -->
+            </td>
+        </tr>
+    </table>
+</div><img style="display: block;margin: 0 auto" align="center" src="img/xin.jpg" height="100%" alt=""/>
+
+    <div id="video_window">
+        <button id="video_window_CloseButton">
+            &times;
+        </button>
+        <div id="video_body">
+            <video src="video/l2.mp4" id="VIdeo" height="100%" style="display: block;margin: 0 auto" controls="controls">
+            </video>
+        </div>
+    </div>
+</div>
+</section>
+    <br/>
+<br/>
+<br/>
+<br/>
+<input type="hidden" value="520" id="HiDden"/>
+</body>
+<script type="text/javascript">
+    var _Txt = document.getElementById("txt");
+    var _Btn = document.getElementById("btn");
+    var Hi_dden = document.getElementById("HiDden");
+    var _BLock = document.getElementById("video_window");
+    var _video = document.getElementById("VIdeo");
+    var AUdio = document.getElementById("AUdio");
+    var _closevideowindow = document.getElementById("video_window_CloseButton");
+    _Btn.onclick=function(){
+        if (_Txt.value == Hi_dden.value){
+            _BLock.style.bottom="0%";
+            _BLock.style.opacity="1";
+            _Txt.value="";
+            _BLock.style.transform="scale(1.0)";
+            AUdio.pause();
+        }
+        else {
+            _BLock.style.bottom="-100%";
+            _BLock.style.opacity="0";
+            _BLock.style.transform="scale(0.1)";
+            alert("输入的内容不对哦");
+            _video.load();
+        }
+    }
+    _closevideowindow.onclick = function(){
+        _BLock.style.bottom="-100%";
+        _BLock.style.opacity="0";
+        _BLock.style.transform="scale(0.1)";
+        _video.load();
+    }
+    if (AUdio.play()){
+        _video.pause();
+    }
+    else{
+        _video.play();
+    }
+</script>
+</html>

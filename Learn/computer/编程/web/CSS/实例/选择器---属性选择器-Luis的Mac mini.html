@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器---属性选择器</title>
+	<style>
+		input[name]{                    /*属性选择---拥有name属性的将被选择到*/
+			height: 40px;
+			background-color: #ccc
+		}
+		input[class="bbbno2"]{            /* 属性值选择---class属性值为aaano1的将被选择到*/
+			background-color: red;
+		}
+		input[class^="c"]{                 /*属性值开头选择---class属性值为c开头的将被选择到*/
+			background-color: green;
+		}
+		input[class$="4"]{                 /*属性值结尾选择---class属性值为4结尾的将被选择到*/
+			background-color: yellow;
+		}
+		input[class~="n"]{                  /* 属性包含字符n的被选择（在一列中的好几个值，是用空格隔开的。） */
+			font-size: 3em;
+		}
+		input[class*="eno"]{                 /*属性值包含选择---class属性值包含eno的将被选择到*/
+			background-color: orange;
+		}
+		
+		/* 可单独写 */
+		[value="ddd"]{
+			box-shadow: 1px 1px 4px #333;
+		}
+		a[title]{
+			background-color:brown;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="aaano1" value="aaa" class="aaa n o1" id=""><br>
+	<input type="text"  name="bbbno2" value="bbb" class="bbbno2" id=""><br>
+	<input type="text" name="cccno3" value="ccc" class="cccn3" id=""><br>
+	<input type="text" name="dddno4" value="ddd" class="ddd n o4" id=""><br>
+	<input type="text" name="eeeno5" value="ddd" class="eeeno5" id=""><br>
+	<a href="" class="">搞</a>
+	<a href="">jgt</a><a title="fkj" href="">jgt</a><a href="">jgt</a><a id href="">jgt</a><a href="">jgt</a><a title="" href="">jgt</a><a href="">jgt</a><a href="">jgt</a>
+</body>
+</html>

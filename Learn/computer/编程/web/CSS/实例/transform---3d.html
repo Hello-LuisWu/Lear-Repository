@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform---合写</title>
+	<style type="text/css">
+		.box1{
+			width: 400px;
+			height: 400px;
+			transition: all .5s;
+			box-shadow: 1px 2px 10px #333;
+			/*transform-origin: left top;*/
+			transform-origin: 20% 0;
+			transform: rotate(33deg);
+		}
+		div{
+			width: 400px;
+			height: 400px;
+			background: red;
+			font-size: 30px;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">	
+我的宽高是：width: 400px; height: 400px;
+	</div>
+	<div>	
+我的宽高也是：width: 400px; height: 400px;
+	</div>
+</body>
+</html>

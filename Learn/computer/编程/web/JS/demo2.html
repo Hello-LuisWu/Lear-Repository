@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+
+
+  #test{
+	width:300px;
+
+	height:50px;
+	background:red;
+	line-height:50px;
+	text-align:center;
+	opacity:0;
+	color:white;
+	position:fixed;
+	transform:scale(0.2);
+	right:20px;
+	top:20px;
+	transition:all 0.5s;
+  }
+  #_close{
+	position:absolute;
+	background:red;
+	border:0px;
+	outline:none;
+	padding:4;
+	font-size:18px;
+	margin:0;
+	right:0px;
+	top:0px;
+  }
+  #_close:hover{
+	background:rgba(0,0,0,0.1)
+  }
+  </style>
+ </head>
+ <body>
+ <div id="test">
+		<button id="_close">
+			&times;	
+		</button>
+dthtxhf
+ </div>
+	<button id="obj">
+	放大
+	</button>
+ </body>
+ <script>
+	document.getElementById("obj").onclick = function(){
+		document.getElementById("test").style.opacity="1";
+		document.getElementById("test").style.transform="scale(1)";
+		
+		document.getElementById("_close").onclick = function(){
+		document.getElementById("test").style.opacity="0";
+		document.getElementById("test").style.transform="scale(0.2)";
+		}
+		var _t = setTimeout(kk,3000); 
+	}
+	function kk(){
+		document.getElementById("test").style.opacity="0";
+		document.getElementById("test").style.transform="scale(0.2)";
+		}
+ </script>
+</html>

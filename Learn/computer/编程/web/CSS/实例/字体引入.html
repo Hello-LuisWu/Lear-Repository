@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体引入</title>
+    <link rel="stylesheet" href="./fonts/font_zbv9f16rnw8/iconfont.css">
+    <style>
+        :root{
+            font-size: 10px;
+        }
+        /* @font-face {
+            font-family: wrr; 自定义字体名称
+            src: 
+                url(./fonts/OpenDyslexicAltNerdFont-Bold.otf), 本地字体文件所在路径
+                url(./fonts/OpenDyslexicNerdFont-Italic.otf);
+        } */
+
+        /* 引入 iconfont 在线字体/图标 */
+        @font-face {
+            font-family: "得意黑 斜体";
+            font-weight: 400;
+            font-display: swap;
+            src: 
+                url("//at.alicdn.com/wf/webfont/cPPxfj7pB70I/xeSOlUImXpv9.woff2") format("woff2"),
+                url("//at.alicdn.com/wf/webfont/cPPxfj7pB70I/mwPLVSS3fnW7.woff") format("woff");
+        }
+        @font-face {
+            font-family: 'iconfont';
+            src: 
+                url('./fonts/font_zbv9f16rnw8/iconfont.ttf') format('truetype');
+        }
+        p {
+            text-align: center;
+            font-family: "得意黑 斜体"; /* 调用刚刚定义的字体名称 */
+            font-size: 100px;
+        }
+        .p{
+            background-image: linear-gradient( 135deg, #FFD26F 10%, #3677FF 100%);
+            -webkit-text-fill-color: transparent;
+            color: rgba(0, 0, 0, 0);
+            background-clip: content-box;
+			-ms-background-clip: text;
+			-webkit-background-clip: text;
+        }
+        .icon-fonts{
+            font-family: "iconfont" !important;
+            font-style: normal;
+            font-size: 16px;
+            color: #1c8489;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="jj">
+        <p>
+            <span class="p">Luis Wu 吴海峰</span>
+            
+            <!-- 通过字体的 Unicode 编码 -->
+            <i class="icon-fonts">&#xf0175;</i>
+            <i class="icon-fonts">&#xe753;</i>
+            
+            <!-- 通过 css 伪类元素 before 调用字体文件的 Unicode  -->
+            <i class="iconfont icon-doc"></i>
+            <i class="iconfont icon-home2"></i>
+
+            <!-- 通过 js 和 svg 图像引入图标 -->
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-f-about"></use>
+            </svg>
+            <script src="./fonts/font_zbv9f16rnw8/iconfont.js"></script>
+        </p>
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>figure&figcaption</title>
+</head>
+<body>
+<!-- 
+	* 释义：figure的内容是独立于整个文档的，若把figure删除的话，不会对文档的主题产生影响
+	* figure不只是适用于图片，还适用于音频、视频插件，统计表格等等
+ -->
+<!-- 示例 -->
+	<!-- 图像 -->
+<figure>
+		<figcaption>这是我的照片哦</figcaption>
+		<img src="img/01.jpg" alt="" width="300">
+	</figure>
+	<hr>
+	<!-- 代码片段 -->
+	<figure>
+		<figcaption>Get browser details using <code>navigator</code>.</figcaption>
+		<code>
+			<pre>
+		  function NavigatorExample() {
+			var txt;
+			txt = "Browser CodeName: " + navigator.appCodeName;
+			txt+= "Browser Name: " + navigator.appName;
+			txt+= "Browser Version: " + navigator.appVersion ;
+			txt+= "Cookies Enabled: " + navigator.cookieEnabled;
+			txt+= "Platform: " + navigator.platform;
+			txt+= "User-agent header: " + navigator.userAgent;
+		  }
+		</pre>
+	</code>
+		  </figure>
+		  <hr>
+		  <!-- 引用内容 -->
+		  <figure>
+				<figcaption><cite>Edsger Dijkstra:</cite></figcaption>
+				<blockquote>If debugging is the process of removing software bugs,
+				then programming must be the process of putting them in.</blockquote>
+			  </figure>
+			  <hr>
+			  <!-- 诗歌 -->
+			  <figure>
+					<p style="white-space:pre">
+				  Bid me discourse, I will enchant thine ear,
+					Or like a fairy trip upon the green,
+				  Or, like a nymph, with long dishevell'd hair,
+					Dance on the sands, and yet no footing seen:
+				  Love is a spirit all compact of fire,
+					Not gross to sink, but light, and will aspire.</p>
+					<figcaption><cite>Venus and Adonis</cite>,
+					  by William Shakespeare</figcaption>
+				  </figure>
+</body>
+</html>

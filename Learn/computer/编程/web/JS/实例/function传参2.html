@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>函数传参</title>
+	<style>
+	#box1{
+		width:200px;
+		height:200px;
+		border:1px solid red;
+	}
+	</style>
+</head>
+<body>
+	<div id="box1">
+	
+	</div>
+	<button onclick="ll('background','blue')">
+		变蓝色
+	</button>
+	<button onclick="ll('background','yellow')">
+		变黄色
+	</button>
+	<button onclick="ll('background','red')">
+		变红色
+	</button>
+	<script>
+		function ll(Lname,Lvalue){
+			var box1 = document.getElementById("box1");
+			box1['style'][Lname]=Lvalue;
+		}
+	</script>
+</body>
+</html>

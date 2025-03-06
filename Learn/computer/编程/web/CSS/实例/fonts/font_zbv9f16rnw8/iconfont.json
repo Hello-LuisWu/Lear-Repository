@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "160002",
+      "name": "home2",
+      "font_class": "home2",
+      "unicode": "f0175",
+      "unicode_decimal": 983413
+    },
+    {
+      "icon_id": "1013765",
+      "name": "doc文件",
+      "font_class": "doc",
+      "unicode": "e753",
+      "unicode_decimal": 59219
+    },
+    {
+      "icon_id": "6151157",
+      "name": "cloud download-fill",
+      "font_class": "clouddownload-fill",
+      "unicode": "e7d9",
+      "unicode_decimal": 59353
+    },
+    {
+      "icon_id": "12773700",
+      "name": "f-about",
+      "font_class": "f-about",
+      "unicode": "e771",
+      "unicode_decimal": 59249
+    }
+  ]
+}

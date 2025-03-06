@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding-top: 30px;
+}
+/* #page-header{
+
+} */
+.header-topArea{
+	height: 40px;
+	margin: 0 auto 25px;
+}
+#logo-container{
+	width: 160px;
+	height: 34px;
+	zoom: 1;
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: middle;
+	background: url(img/logo.png);
+	background-repeat: no-repeat;
+}
+#logo-links{
+	display: block;
+	width: 160px;
+	height: 34px;
+}
+.top-search-ctn{
+	width: 270px;
+	height: 30px;
+	border: 1px solid #c3c3c3;
+	position: relative;
+	zoom: 1;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.top-search-box{
+	display: block;
+	height: 30px;
+	overflow: hidden;
+
+}
+.top-srarch-text{
+	width: 240px;
+	border: none;
+	font-size: 13px;
+	height: 20px;
+	margin: 4px;
+	outline: none;
+}
+.top-search-icon{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	background-image: url(./img/bn_srh_1.png);
+	background-size:  50% 50%;
+	background-position: center center;
+}	
+.top-srarch-btn{
+	border: none;
+	opacity: 0;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+}
+.page-navigation{
+	float: right;
+
+}
+.nav-list{
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+
+}
+.nav-item{
+	margin: 0 0 0 17px;
+	display: inline-block;
+	zoom: 1;
+
+}
+[class*=nav-links]{
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 30px;
+}
+/* 顶部导航文字颜色 */
+.nav-links1{
+	color: brown;
+}
+.nav-links2{
+	color: #278DCE;
+}
+.nav-links3{
+	color: #F37F00;
+}
+.nav-links4{
+	color: #0F959D;
+}
+.nav-links5{
+	color: #E85205;
+}
+.nav-links6{
+	color: #9BD6C5;
+}
+.nav-links7{
+	color: #494949;
+}
+.nav-links8{
+	color: #488B43;
+}
+/***************/
+.tf-banner{
+	width: auto;
+	background-image: url(./img/16ad990ec23uwn790d4.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-color: #edf4ed;
+	background-position: calc(50% - 305px) top;
+	margin-bottom: 25px;
+
+}
+
+.banner-box{
+	position: relative;
+	padding: 0 0 4px;
+	overflow: visible;
+	zoom: 1;
+	margin: 0 auto;
+}
+.app{
+	margin: auto 0 auto 470px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 120px;
+
+}
+.app-title{
+font-size: 25px;
+line-height: 25px;
+color: #111;
+margin: 7px 0;
+font-weight: normal;
+
+}
+.login{
+	width: 300px;
+	height: 300px;
+}
+.download-app{
+	margin-top: 18px;
+
+}
+.download-btn{
+	display: inline-block;
+	color: #fff;
+	zoom: 1;
+	width: 130px;
+	padding-right: 0px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	margin-right: 9px;
+	vertical-align: top;
+	position: relative;
+	border-radius: 30px;
+	background-color: #17AA56;
+	overflow: hidden;
+	transition: all .4s;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 0px #119e4d;
+	font-size: 14px;
+}
+.download-btn:hover{
+	padding-right: 20px;
+
+}
+.download-icon{
+	font-size: 13px;
+	font-style: normal;
+	transition: all .4s;
+	opacity: 0;
+	transform: scale(0);
+	position: absolute;
+	right: -7px;
+	display: inline-block;
+	top: 0;
+}
+.download-btn:hover .download-icon {
+	right: 20px;
+	opacity: 1;
+	transform: scale(1);
+}
+.download-qrCode{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+
+.download-qrCode img{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.download-qrCode-hiddeng{
+	padding: 20px 20px 5px;
+	position: absolute;
+	border-radius: 2px;
+	color: #666;
+	background-color: #fff;
+	font-size: 13px;
+	line-height: 13px;
+	top: 0px;
+	left: 0;
+	transform-origin: top left;
+	transform: scale(.13);
+	opacity: 0;
+	transition: all 0.4s;
+	word-spacing: normal;
+	text-align: center;
+	box-shadow: 1px 1px 3px #333;
+}
+.download-qrCode-hiddeng img{
+	width: 160px;
+	height: 160px;
+}
+.download-qrCode:hover > .download-qrCode-hiddeng {
+	transform: scale(1);
+	opacity: 1;
+}
+.login-window{
+
+	width: 300px;
+}
+.download-qrCode-hiddeng p{
+	margin: 13px 0;
+	white-space: nowrap;
+}

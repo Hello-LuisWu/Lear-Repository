@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>table表格</title>
+	<style type="text/css">
+		td{
+			text-align: center;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+<table align="center" width="1000" cellpadding="0" cellspacing="0" border="1">
+<caption>表格的标题</caption>
+	<!-- 表格的头部 -->
+	<thead>
+		<tr>
+			<th>姓名</th>
+			<th>年龄</th>
+			<th>性别</th>
+			<th>爱好</th>
+		</tr>
+	</thead>
+
+	<!-- 表格的主体 -->
+	<tbody>
+		<tr>
+			<td>吴海峰</td>
+			<td>23</td>
+			<td>男</td>
+			<td>足球</td>
+		</tr>
+		
+		<tr>
+			<td>马宗平</td>
+			<td>19</td>
+			<td>男</td>
+			<td rowspan="2">唱歌</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>备注：</td>
+			<td colspan="3">2</td>
+		</tr>
+	</tbody>
+
+	<!-- 表格的脚部 -->
+	<tfoot>
+		
+	</tfoot>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+
+<table align="center"  border="1" cellpadding="0" cellspacing="0">
+	<!-- colgroup：组合列 -->
+	<colgroup span="2" style="background: green; width: 300px;"></colgroup>
+	<colgroup span="1" style="background: blue; width: 300px;"></colgroup>
+	<colgroup span="1" style="background: yellow; width: 300px;"></colgroup>
+	<tr>
+		<td>姓名</td>
+		<td>年龄</td>
+		<td>性别</td>
+		<td>爱好</td>
+	</tr>
+	<tr>
+		<td>吴海峰</td>
+		<td>23</td>
+		<td>男</td>
+		<td>足球</td>
+	</tr>
+	<tr>
+		<td>吴海峰</td>
+		<td>23</td>
+		<td>男</td>
+		<td>足球</td>
+	</tr>
+	<tr>
+		<td>吴海峰</td>
+		<td>23</td>
+		<td>男</td>
+		<td>足球</td>
+	</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+
+<table align="center"  border="1" cellpadding="0" cellspacing="0">
+	<!-- colgroup：组合列 -->
+	<colgroup span="3" style="width: 300px;">
+		<col style="background: red">
+		<col style="background: #00ffff;">
+		<col style="background: #ccc">
+	</colgroup>
+	<colgroup>
+		<col style="width:400px;background:yellow;">
+	</colgroup>
+	<tr>
+		<td>姓名</td>
+		<td>年龄</td>
+		<td>性别</td>
+		<td>爱好</td>
+	</tr>
+	<tr>
+		<td>吴海峰</td>
+		<td>23</td>
+		<td>男</td>
+		<td>足球</td>
+	</tr>
+	<tr>
+		<td>吴海峰</td>
+		<td>23</td>
+		<td>男</td>
+		<td>足球</td>
+	</tr>
+	<tr>
+		<td>吴海峰</td>
+		<td>23</td>
+		<td>男</td>
+		<td>足球</td>
+	</tr>
+</table>
+</body>
+</html>

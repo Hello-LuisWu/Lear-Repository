@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>PC�?固定布局</title>
+	<style type="text/css">
+		*{-webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden;padding: 0;margin: 0;font-family: '�?�?雅黑'}
+		.clrflt{
+			clear: both;
+		}
+		body{
+			background-color: #fff;
+		}
+		#header{
+			width: auto;
+			min-width: 1200px;     /*！！！�?�度�?100%时，解决放大网页之后左边会有白边！！�?*/
+			height: 70px;
+			background-color: #333;
+			position: relative;
+			z-index: 9999;
+			box-shadow: 0 2px 10px #333;
+
+		}
+		.navBox{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		#header ul{
+			list-style: none;
+			float: right;
+			height: 100%;
+		} 
+		#header ul li{
+			float: left;
+			display: block;
+			width: 120px;
+			height: 100%;
+			line-height: 70px;
+		}
+		#header ul li a{
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			color: #eee;
+
+		}
+		.bgBlack{
+			background-color: black;
+		}
+		#header ul li a:hover{
+			background-color: #000;
+		}
+		#header .navBox h1{
+			float: left;
+			height: 100%;
+			width: 150px;
+			overflow: hidden;
+			position: relative;
+
+		}
+		#header h1 a{
+			display: block;
+			width: 100%;
+			z-index: 2;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.hid{
+			display: none;
+		}
+		#search{
+			width: auto;
+			height: 650px;
+			min-width: 1200px; /*！！！�?�度�?100%时，解决放大网页之后左边会有白边！！�?*/
+			background: url(bn.jpg) no-repeat center;
+		}
+		#main > section{
+			max-width: 1200px;
+			margin: 20px auto;
+			column-width: 350px;
+			column-count: 3;
+		}
+		.mainTitle{
+			text-align: center;
+			column-span: all;
+			-webkit-column-span: all;
+		}
+		.mainTitle h2{
+			font-size: 45px;
+			margin: 10px 0;
+			-webkit-column-span: all;
+			color: #777;
+			letter-spacing: 3px;
+		}
+		.mainTitle p{
+			font-size: 14px;
+			-webkit-column-span: all;
+			color: #777;
+			margin: 10px 0;
+		}
+		figure div{
+			overflow: hidden;
+			width: auto;
+			height: auto;
+		}
+		#main figure{
+			display: inline-block;             /*宽高会随着子元素的变化而变化，也可以�?�置宽高*/
+			padding: 5px;
+			transition: all .4s;
+			margin: 10px 5px;
+			min-width: 180px;
+			position: relative;
+			box-shadow: 1px 1px 7px rgba(0,0,0,0.1);
+		}
+		#main figure:hover{
+		}
+		#main figure .type{
+			display: inline-block;
+			padding: 5px;
+			background: orange;
+			font-size: 18px;
+			position: absolute;
+			left: 5px;
+			top: 5px;
+		}
+		#main figure img{
+			width: 100%;
+			vertical-align: middle;/*
+			垂直居中�?以解决图片有下边�?*/
+			transition: all .4s;
+		}
+		#main figure img:hover{
+			-webkit-filter: blur(50px);/*像素为单�?*/
+			-ms-filter: blur(50px);/*像素为单�?*/
+			filter: blur(50px);/*像素为单�?*/
+		}
+		#main figure figcaption{
+			font-size: 14px;
+			width: 100%;
+			line-height: 1.5;
+			padding: 7px 0 5px 0;
+			color: #777;
+		}
+		#main figure figcaption a{
+			color: #777;
+			font-weight: 100;
+			text-decoration: none;
+		}
+		#main figure figcaption a:hover{
+			text-decoration: underline;
+		}
+		#main figure figcaption h3{
+			font-size: 14px;
+		}
+		#main figure figcaption strong{
+			color: #777;
+			font-weight: 100;
+		}
+		#main figure .info{
+		padding: 5px 0;
+		}
+		#main figure em{
+			float: right;     /*！！！父元素原本就是左�?�齐，所以只要�?�em一�?进�?�右�?�?！！�?*/
+			font-size: 14px;
+			font-style: normal;
+			margin: 5px;
+		}
+		#main figure span, #main figure span strong{
+			font-size: 20px;
+			color: #f60;
+		}
+		#footer{
+			background: #000;
+		}
+		#footer .top{
+			width: 1200px;
+			height: auto;
+			margin: 0 auto;
+			border-bottom: solid 1px #444;
+		}
+		#footer *{
+			color: #eee;
+		}
+		#footer .item{
+			width: 400px;
+			float: left;
+		}
+		#footer .item div{
+			padding: 20px;
+		}
+		#footer .bottom h2{
+			text-align: center;
+			padding: 20px;
+			background: #333;
+		}
+	</style>
+</head>
+<body>
+
+
+		<section id="main">
+			<h2 class="hid">这是主体部分</h2>
+			<section>
+				<div class="mainTitle">
+					<h2>�?门商�?</h2>
+					<p>哈哈�? 哈哈哈哈�? 哈哈哈哈哈哈A�? 哈哈哈哈哈哈</p>
+				</div>
+					<section class="figureCtn">
+						<figure>
+							<div style="overflow: hidden;">
+								<img src="img2.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img3.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img4.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img5.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img6.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img7.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img8.png" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img9.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img10.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img11.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img12.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img13.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img14.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+					<section class="figureCtn">
+						<figure>
+							<div>
+								<img src="img15.jpg" title="这是商品的图�?" alt="这是商品的图�?">
+							</div>
+							<figcaption>
+								<h3><a href="#"><strong>《砀山酥梨�?<!-- 强调的作�? --></strong>这是商品的标题哦这是商品的标题哦这是商品这是商品的标题哦这是商品</a></h3>
+							</figcaption>
+							<div class="info">
+								<em>满意度：77%<!-- 强调作用 --></em>
+								<span>�? <strong>2999<!-- ！！！强调作�?！！�? --></strong>�?</span>
+							</div>
+							<div class="type">
+								惊爆�?
+							</div>
+						</figure>
+					</section>
+			</section>
+		</section>
+</body>
+</html>

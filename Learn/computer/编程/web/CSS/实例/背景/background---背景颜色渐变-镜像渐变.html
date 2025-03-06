@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 400px;
+			height: 200px;
+			margin: 20px;
+		}
+		#div1{
+			width: 200px;
+			background: radial-gradient(red, green);
+		}
+		#div2{
+			background: radial-gradient(circle, red, green); /*正圆*/
+		}
+		#div3{
+			background: radial-gradient(circle at top left, red, yellow,green);
+		}
+		#div4{
+			background: radial-gradient(circle closest-side, red, green);/*半径靠近最近的边*/
+		}
+		#div5{
+			background: radial-gradient(circle closest-corner, red, green);/*半径靠近最近的角*/
+		}
+		#div6{
+			background: radial-gradient(circle farthest-side, red, green);/*半径靠近最远的边*/
+		}
+		#div7{
+			background: radial-gradient(circle farthest-corner, red, green);/*半径靠近最远的角*/
+		}
+		#div8{
+			background: radial-gradient(circle 50px, red, green);/*半径的大小*/
+		}
+		#div9{
+			background: repeating-radial-gradient(circle 50px, red, green);/*重复渐变*/
+		}
+	</style>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+	<div id="div5"></div>
+	<div id="div6"></div>
+	<div id="div7"></div>
+	<div id="div8"></div>
+	<div id="div9"></div>
+</body>
+</html>

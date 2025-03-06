@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(img/51b14ac555718.jpg);
+        }
+
+        .box1 {
+            width: 550px;
+            height: 250px;
+            border-radius: 8px;
+            /* background-color: bisque; */
+            /* border: 1px solid rgba(255, 255, 255, 0.192); */
+            background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.25), rgba(78, 204, 71, 0.265));
+            /* background-color: rgba(255, 255, 255, 0.116); */
+            margin: 200px auto;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow:
+                2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                inset 0px 1px 2px rgba(255, 255, 255, 0.199),
+                inset 0px -1px 2px rgba(255, 255, 255, 0.206),
+                inset 20px -0px 35px rgba(255, 255, 255, 0.068);
+            padding: 20px 0;
+            box-sizing: border-box;
+            color: #000000;
+            position: relative;
+            overflow: hidden;
+            transition: 1s all;
+        }
+        .box2 {
+            width: 550px;
+            height: 250px;
+            border-radius: 8px;
+            /* background-color: bisque; */
+            /* border: 1px solid rgba(255, 255, 255, 0.192); */
+            /* background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.25), rgba(78, 204, 71, 0.265)); */
+            background-color: rgba(45, 45, 45, 0.829);
+            margin: 200px auto;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            /* box-shadow:
+                2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                inset 20px -0px 35px rgba(255, 255, 255, 0.101); */
+            padding: 20px 0;
+            box-sizing: border-box;
+            color: #000000;
+            position: relative;
+            overflow: hidden;
+            transition: 1s all;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .box1:hover {
+            height: 300px;
+        }
+
+        strong {
+            position: absolute;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            text-align: center;
+            left: 0;
+            /* text-shadow: 0 1px 0px rgba(163, 163, 163, 0.375); */
+            font-size: 12px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.926);
+
+        }
+
+        i {
+            width: 12px;
+            height: 12px;
+            border-radius: 16px;
+            margin: 5px 2px;
+            float: left;
+            box-sizing: border-box;
+            padding-right: 1px;
+            display: block;
+            font-size: 8px;
+            text-align: center;
+            line-height: 12px;
+            color: #333333f6;
+            cursor: default;
+        }
+
+        p {
+            font-size: 12px;
+            color: aliceblue;
+            padding-top: 4px;
+            text-align: left;
+        }
+
+        span {
+            color: aliceblue;
+        }
+
+        tbody {
+            overflow: hidden;
+            border-radius: 14px;
+        }
+
+        tbody td {
+            margin: 0;
+            /* padding: 0; */
+            color: #ffffffc6;
+            transition: all .4s;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+
+        /* tr:hover td{
+            padding-left: 10px;
+        } */
+        /* tr:nth-child(odd) {
+            background-color: rgba(0, 208, 255, 0.644);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 255, 234, 0.636);
+        } */
+
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.681);
+        }
+
+        tr td:nth-child(2) {
+            text-align: right
+        }
+
+        tr:first-child td {
+            background-color: rgba(204, 204, 204, 0);
+        }
+
+        a {
+            color: #e7e7e7;
+            text-decoration: underline;
+            border-radius: 3px;
+            font-size: 12px;
+            cursor: default;
+            cursor: text;
+            font-weight: normal;
+            /* background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%); */
+        }
+
+        a:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <i
+            style="box-shadow: 0 3px 6px rgba(0, 0, 0, 0.448);background-image: url(img/head.jpg);border-radius: 50%;margin-right: 10px;border: 1px solid rgba(255, 255, 255, 0.246);margin-left: 60px;display: block; width: 50px;height: 50px;">
+
+        </i>
+        <table>
+
+
+            <caption style="text-align: left;color: #fff;margin-bottom: 10px;font-size: 20px;"><span
+                    style="padding-bottom: 6px;font-size: 24px;font-weight: bold;border-bottom: 2px solid #fff;">information</span>
+            </caption>
+            <tbody style="overflow: auto;height: 90px;">
+                <tr>
+                    <td style="width: 6en;">name：</td>
+                    <td>Luis</td>
+                </tr>
+                <tr>
+                    <td>age：</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>interest：</td>
+                    <td>computer，design，football</td>
+                </tr>
+                <tr>
+                    <td>profession：</td>
+                    <td>designer</td>
+                </tr>
+                <tr>
+                    <td>E-MAIL：</td>
+                    <td><a href="mailto:1014150883@qq.com?Subject=from%20website%20luis-wu.cn">点击发送</a></td>
+                </tr>
+                <tr>
+                    <td>Phone Number：</td>
+                    <td><a href="tel:18755141108">点击拨打</a></td>
+                </tr>
+                <tr>
+                    <td>Website：</td>
+                    <td><a href="https://www.luis-wu.cn">点击访问</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"
+                        style="font-weight: bold; font-size: 18px;padding-top: 20px;color: rgba(255, 255, 255, 0.242);">
+                        向阳而生，逐光而行，心有暖阳，何惧孤独
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="box2">
+        <i
+            style="box-shadow: 0 3px 6px rgba(0, 0, 0, 0.448);background-image: url(img/head.jpg);border-radius: 50%;margin-right: 10px;border: 1px solid rgba(255, 255, 255, 0.246);margin-left: 60px;display: block; width: 50px;height: 50px;">
+
+        </i>
+        <table>
+
+
+            <caption style="text-align: left;color: #fff;margin-bottom: 10px;font-size: 20px;"><span
+                    style="padding-bottom: 6px;font-size: 24px;font-weight: bold;border-bottom: 2px solid #fff;">information</span>
+            </caption>
+            <tbody style="overflow: auto;height: 90px;">
+                <tr>
+                    <td style="width: 6en;">name：</td>
+                    <td>Luis</td>
+                </tr>
+                <tr>
+                    <td>age：</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>interest：</td>
+                    <td>computer，design，football</td>
+                </tr>
+                <tr>
+                    <td>profession：</td>
+                    <td>designer</td>
+                </tr>
+                <tr>
+                    <td>E-MAIL：</td>
+                    <td><a href="mailto:1014150883@qq.com?Subject=from%20website%20luis-wu.cn">点击发送</a></td>
+                </tr>
+                <tr>
+                    <td>Phone Number：</td>
+                    <td><a href="tel:18755141108">点击拨打</a></td>
+                </tr>
+                <tr>
+                    <td>Website：</td>
+                    <td><a href="https://www.luis-wu.cn">点击访问</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"
+                        style="font-weight: bold; font-size: 18px;padding-top: 20px;color: rgba(255, 255, 255, 0.242);">
+                        向阳而生，逐光而行，心有暖阳，何惧孤独
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

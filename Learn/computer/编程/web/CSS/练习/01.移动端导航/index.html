@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>02.移动端导航</title>
+	<style type="text/css">
+		html{
+			font-size: 10px;
+			height: 100%;
+		}
+		body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.ctn{
+			width: 55%;
+			height: 100%;
+			position: fixed;
+			left: -55%;
+			transition: all .5s;
+		}
+		.button{
+			width: 4rem;
+			height: 4rem;
+			background-color: #333;
+			position: absolute;
+			right: -4rem;
+		}
+		.ctn:hover{
+		}
+		.box{
+			width: 100%;
+			position: absolute;
+			right: 0%;
+			background-color: olive;
+			height: 100%;
+			transition: all .5s;
+		}
+		.ctn:hover .box{
+			right: -100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="ctn">
+		<div class="button">
+			
+		</div>
+		<div class="box">
+			
+		</div>
+	</div>
+</body>
+</html>

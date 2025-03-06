@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>input属性</title>
+</head>
+<body>
+
+
+
+	<h1>不同類型的input文本類型</h1>
+	<!-- fieldset 表单的群组 -->
+<fieldset>
+	<legend><h3>不同的输入表单</h3></legend>
+	<form action="">
+		<!-- 不同類型的input -->
+		單行文本框<input style="background: #ffff80" type="text" name="uname">
+		<br>
+		<br>
+		密碼框<input type="password" name="upwd">
+		<br>
+		<br>
+		電子郵件<input type="email" name="uemail">
+		<br>
+		<br>
+		電話<input type="tel" name="uphone">
+		<br>
+		<br>
+		網址鏈接<input type="url" name="ulink">
+		<br>
+		<br>
+		<!-- max：不能超过这个最大值。min：不能低于这个最小值。step：步长（点击上下箭头会按照步长增长） -->
+		输入购买数量（數字）<input type="number" max="50" min="10" step="3" name="unumber">
+		<br>
+		<br>
+		搜索<input type="search" name="usearch">
+		<br>
+		<br>
+		<!-- min：最小范围值。max：最大范围值 -->
+		音量（範圍）<input type="range" min="0" max="1000" value="80" id="R_N">
+		<input value="获取数值" type="button" id="GetData">
+		<p id="Rangenumber" style="height: 30px; width: 200px; border: 1px solid #ccc;line-height: 30px; box-shadow: 1px 1px 5px rgba(0,0,0,0); padding-left: 5px;"></p>
+		<script type="text/javascript">
+			document.getElementById("GetData").onclick = function(){
+				var _range = document.getElementById("R_N").value;
+
+				
+				document.getElementById("Rangenumber").innerHTML = _range;
+			}
+		</script>
+		<br>
+		<br>
+		<!-- accept：指定只能选取某一类型的文件。multiple：允许多选。 -->
+		文件<input type="file" multiple accept="image/png" name="ufile">
+		<br>
+		<br>
+		颜色<input type="color" name="ucolor">
+		<br>
+		<br>
+		隐藏表单 <input type="hidden" name="" value="Luis">
+		<br> 
+		<br>
+		<input value="提交" type="submit"> <input type="reset" value="重置">
+	</form>
+
+</fieldset>
+
+	<h1>日期&時間</h1>
+	<form action="">
+		選取年/月/日<input type="date" name="t1">
+		<br>
+		選取月/年<input type="month" name="t2">
+		<br>
+		選取周/年<input type="week" name="t3">
+		<br>
+		選取時間（小時&分鐘）<input type="time" name="t4">
+		<br>
+		選取時間/日/月/年（utc時間）<input type="datetime" name="t5">
+		<br>
+		選取時間日/月/年（本地時間）<input type="datetime-local" name="t6">
+		<br>
+		<br>
+		<input type="reset" value="Reset" />
+		<input type="submit" value="提交">
+		<!-- <input type="reset" value="重置" /> -->
+	</form>
+
+
+	<h1>輸入的下拉選項</h1>
+	<form action="">
+		<input type="search" list="search-option">
+		<datalist id="search-option">
+			<option value="http://www.baidu.com" label="百度">
+			<option value="http://www.qq.com" label="騰訊">
+			<option value="http://www.taobao.com" label="淘寶">
+		</datalist>
+	</form>
+
+
+	<h1>下拉選擇</h1>
+	<form action="">
+	<h3>所在地：</h3>
+		<select id="" name="szd">
+			<option value="合肥">合肥</option>
+			<option value="上海">上海</option>
+			<option value="杭州">杭州</option>
+			<option value="广州">广州</option>
+			<option selected value="昆山">昆山</option>
+			<option value="宁夏">宁夏</option>
+			<option value="青岛">青岛</option>
+		</select>
+		<input type="submit" value="上交">
+	</form>
+
+
+	<h1>單選</h1>
+	<form action="" >
+	<label for="xbn">男生</label>
+		<input id="xbn" type="radio" name="xb">
+	<label for="xbnv">女生</label>
+		<input id="xbnv" type="radio" name="xb">
+		<input type="submit">
+	</form>
+
+
+	<h1>复选</h1>
+	<form action="">
+		<h3>个人爱好</h3>
+		足球<input value="足球" type="checkbox" name="aihao">
+		篮球<input value="篮球" type="checkbox" name="aihao">
+		网球<input value="网球" type="checkbox" name="aihao">
+		橄榄球<input value="橄榄球" type="checkbox" name="aihao">
+		<input type="submit">
+	</form>
+	<h1>文本域</h1>
+	<form action="">
+		<textarea placeholder="请输入留言内容" name="llb" style="resize: none;width: 300px;height: 200px;outline: none;"></textarea>
+		<input type="submit" value="提交">
+	</form>
+
+</body>
+</html>

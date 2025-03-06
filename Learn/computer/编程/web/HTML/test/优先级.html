@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        li{
+            padding: 2px;
+            margin: 2px;
+            letter-spacing: 2px;
+        }
+        .jj ~ li::selection {
+            color: white;
+            text-shadow: 1px 1px 3px #333;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="jj">jj</li>
+        <li>hh</li>
+        <li>gg</li>
+        <li>ff</li>
+    </ul>
+</body>

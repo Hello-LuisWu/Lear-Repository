@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#test{
+width: 200px;
+
+			height: 300px;
+			border: solid 1px #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div id="test">
+		
+	</div>
+	<input type="text" id="test2">
+	<script type="text/javascript">
+	window.onunload = function (){
+		alert("你将离开此页面");
+		return;
+	}
+		var x = document.getElementById("test");
+		var xx = document.getElementById("test2");
+		xx.onfocus = function(){
+			x.style.backgroundColor="blue";
+		}
+		xx.onblur = function(){
+			x.style.backgroundColor="red";
+
+		}
+	</script>
+</body>
+</html>

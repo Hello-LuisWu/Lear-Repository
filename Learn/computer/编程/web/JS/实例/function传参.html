@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>函数传参</title>
+	<style>
+	#box1{
+		width:200px;
+		height:200px;
+		border:1px solid red;
+	}
+	</style>
+</head>
+<body>
+	<div id="box1">
+	
+	</div>
+	<button onclick="ll('innerHTML','我爱你')">
+		我爱你
+	</button>
+	<button onclick="ll('innerHTML','吴梦蝶')">
+		吴梦蝶
+	</button>
+	<script>
+		function ll(Lname,Lvalue){
+			var box1 = document.getElementById("box1");
+			box1[Lname]=Lvalue;
+		}
+	</script>
+</body>
+</html>

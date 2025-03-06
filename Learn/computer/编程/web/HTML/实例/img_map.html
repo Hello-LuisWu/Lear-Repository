@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        *{
+            outline: none;
+        }
+        area{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+
+   <figure>
+        <img usemap="#kkkkLi" src="./img/01.jpg" alt="">
+        <map name="kkkkLi"> 
+            <!-- 圆形 -->
+            <area shape="circle" coords="52,55,50" href="http://www.qq.com" alt="">
+            <!-- 矩形(得到矩形的左上角和右下角) -->
+            <area shape="rect" coords="110,1,210,113" href="http://www.qq.com" alt="">
+            <!-- 多边形 -->
+            <area shape="poly" coords="574,117,481,174,495,392,553,470,620,470,673,421,702,307,726,225,675,151" href="" alt="">
+        </map>
+        <figcaption>这是图片的热点地图</figcaption>
+   </figure>
+</body>
+</html>

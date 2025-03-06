@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js的事件</title>
+	</head>
+	<body>
+	<h3>js的常用事件</h3>
+		<ol>
+			<li>
+				onclick：右击事件
+			</li>
+			<li>
+				ondblclick：双击事件
+			</li>
+			<li>
+				onfocus：当元素获取焦点
+			</li>
+			<li>
+				onblur：当元素失去焦点
+			</li>
+			<li>
+				onerror：当页面或图像加载发生错误
+			</li>
+			<li>
+				onchange：当用户改变域的内容
+			</li>
+			<li>
+				onload：某个页面或图像被完成加载	
+			</li>
+			<li>
+				onselect：当文本被选择
+			</li>
+			<li>
+				onmousemove：当鼠标被移动
+			</li>
+			<li>
+				onabort：当图像加载被中断
+			</li>
+			<li>
+				onreset：当重置按钮被点击
+			</li>
+			<li>
+				onmouseout：鼠标移出
+			</li>
+			<li>
+				onmouseover:鼠标移入
+			</li>
+			<li>
+				onresize：窗口或框架被调整尺寸
+			</li>
+			<li>
+				onsubmit：当点击提交按钮
+			</li>
+			<li>
+				onunload：当用户退出页面
+			</li>
+			<li>
+				oncontextmenu：右击事件
+			</li>
+			<li>
+			<h3>
+				实验1：js实现右击按钮弹出对话框，且禁止出现右击菜单
+			</h3>
+				<script>
+					function ll(){
+						alert("hello world");
+						
+						window.oncontextmenu = function(){
+							return false;
+						}
+					}
+				</script>
+				<button oncontextmenu="ll()">右击事件</button>
+				
+			</li>
+			<li>
+				<h3>
+					实验2：退出窗口弹出提示
+				</h3>
+					<script>
+						window.onunload=function(){
+							alert("是否退出？");
+							return false;
+						}
+					</script>
+			</li>
+		</ol>
+	</body>
+</html>

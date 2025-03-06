@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		code{
+			padding: 4px 5px;
+			background: rgba(0,0,0,0.8);
+			color: #ffffff;
+			border-radius: 3px;
+			cursor: default;background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+		}
+		code:hover{
+			background: rgba(0,0,0,0.9);
+		}
+	</style>
+</head>
+<body>
+	<p style="font-size: 1.4em">
+		了解详细信息，请查看<strong title="右击，查看网页源代码">源代码</strong>
+	</p>
+
+	<p>
+		br:换行
+	</p>
+
+	<p>
+		<span style="float: left">hr：水平线。示例：</span><hr width="300" size="0" style="float: left">
+		<br>
+	</p>
+	
+	<p>
+		ins:下划线。示例：这是<ins>下划线</ins> , 表示文档中添加的内容。 ins 已经被插入文档中的文本。
+	</p>
+
+	<p>
+		u 元素是<u>下划线</u>
+	</p>
+	
+	<p>
+		del:删除线（中划线）。示例：这是<del>删除线</del> ，通常表示错误、删除、废弃的内容。比如可以在需要显示修改记录或者源代码差异的情况使用这个标签。ins 标签的作用恰恰于此相反：
+	</p>
+
+	<p>
+		s：表示过期的内容。	<s>中划线样式</s>
+	</p>
+
+	<p>
+		strong:加粗/重要。示例：这是重要和<strong>不可忽略</strong>的内容，比 em 权重高一级
+	</p>
+
+	<p>
+		b 元素是<b>加粗</b>标签
+	</p>
+
+	<p>
+		em:斜体。示例：这是<em>斜体（强调）</em>, 需要用户着重阅读的内容.
+	</p>
+	<p>
+		i 这是<i>斜体</i>标签
+	</p>
+	<p>
+		wbr:安全换行（一个很长的英文单词当容器承载不了它的长度的时候，会将单词断开）。示例：dhnj<wbr>ortghpod<wbr>tgfiodsni <!-- 这是空元素，且  不支持 ie -->
+	</p>
+	<p>
+		small:小一号字体。示例：this is <small>HTML5</small> document <!-- 在HTML5中，除了它的样式含义，这个元素被重新定义为表示边注释和附属细则，包括版权和法律文本。 -->
+	</p>
+	<p>
+		code:表示计算机代码文本。示例：this is <code>code</code>
+	</p>
+	<p>
+		kbd：表示文本是从键盘上键入的。示例：键入 <kbd>quit</kbd> 来退出程序，或者键入 <kbd>menu</kbd> 来返回主菜单。
+	</p>
+	
+	<p>
+		var:表示变量。示例：this is <var>function</var> <!-- 这个标签经常与 <code> 和 <pre> 标签一起使用，用来显示计算机编程代码范例及类似方面的特定元素。 -->
+	</p>
+	<p>
+		samp:表示计算机或者程序的输出。示例：this is <samp>output</samp>
+	</p>
+	<p>
+		abbr:表示缩写。示例：this is <abbr title="吴海峰">whf</abbr>
+
+	</p>
+	<p>
+		dfn:标记那些对特殊术语或短语的定义。。示例：this is <dfn>jargon</dfn>
+	</p>
+
+	<p>
+		q:双引号。属性：cite：所引用的原文URL；示例：本文标题<q cite="https://www.huxley.net/bnw/four.html">鬼谷子</q> <!-- 来自其他地方的短引用，这些引用通常是标题，所以请不要引入换行符。 -->
+	</p>
+	
+	<p>
+		blockquote：引用其他的长文本，这些内容通常是文字较多的。属性：cite：所引用的原文URL；示例：<blockquote cite="https://www.huxley.net/bnw/four.html">
+			Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.
+			<footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+		</blockquote> <!-- 代表其中的文字是引用内容。通常在渲染时，这部分的内容会有一定的缩进（注 中说明了如何更改）。若引文来源于网络，则可以将原内容的出处 URL 地址设置到 cite 特性上，若要以文本的形式告知读者引文的出处时，可以通过 <cite> 元素。 -->
+	</p>
+
+	<p>
+		cite：作品的标题，就是一个作品的引用，如：书名、歌名、电影电视剧名、绘画作品名、雕塑等等。它必须包含引用作品的符合简写格式的标题或者URL，它可能是一个根据添加引用元数据的约定的简写形式。还表示引用其他地方的内容。示例：
+		<br>
+		First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html"><i>Nineteen Eighty-Four</i></a></cite>，
+		<br>
+		周杰伦的那一首 <cite>《青花瓷》</cite> 非常好听
+	</p>
+
+	<p>
+		ruby:用来展示东亚文字注音或字符注释。示例：<ruby>饕<rp>(</rp><rt>tāo</rt><rp>) </rp>餮<rp>(</rp><rt>tiè</rt> <rp>)</rp></ruby>
+		<ruby>
+			汉 <rp>(</rp><rt>han</rt><rp>)</rp>
+			字 <rp>(</rp><rt>zi</rt><rp>)</rp>
+		</ruby>
+		<ruby>
+			明 日 <rp>(</rp><rt>ming ri</rt><rp>)</rp>
+			</ruby>
+	</p>
+
+	<p>
+		bdo:将文字倒过来显示。示例：<bdo dir="rtl">这是一段文章</bdo> <!-- dir默认属性为 ltr -->
+	</p>
+
+	<p>
+		mark定义带有记号的文本。示例：这是个美丽的<mark>冬天</mark>
+	</p>
+
+	<p>
+		<!-- pubdate 规定文档的发布时间 -->
+		<!-- datetime 定义文档的发布日期及时间 -->
+		time:定义时间/日期。示例：今天是<time datetime="2024-01-27 12:00" pubdate="pubdate">2017/01/27 12:00</time>。我们在每天早上 <time>9:00</time> 开始营业。<p>我在 <time datetime="2008-02-14">情人节</time> 有个约会。</p>
+	</p>
+
+		<h1>address</h1>
+		<p>
+		 为块元素，内容一般是联系信息、地址等，默认样式为倾斜
+		</p>
+		
+	<address>
+		<p>
+			姓名：吴海峰
+		</p>
+
+
+			<p>
+				地址：某某市某某区某某街道
+			</p>
+
+			<p>
+				email：1014150883@qq.com
+			</p>
+			<p>
+				电话：123431134
+			</p>
+	</address>
+	<hr>
+	<address style="height: 50px; line-height: 50px;text-align: center;">
+		版权信息：CopyRight &times; 2017 whf 备案：123456765432dihu
+	</address>
+
+
+	<section>
+		<h1>section</h1>
+		<p>
+			包含一个章节，通常包含一个标题
+		</p>
+	</section>	
+</body>
+</html>
